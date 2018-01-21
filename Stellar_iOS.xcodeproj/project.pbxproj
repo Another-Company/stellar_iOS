@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		91A2ED2D2014611800BBC119 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91A2ED2C2014611800BBC119 /* LoginViewModel.swift */; };
 		91C2AFC3200B21D800430DEA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91C2AFC2200B21D800430DEA /* AppDelegate.swift */; };
 		91C2AFC5200B21D800430DEA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91C2AFC4200B21D800430DEA /* ViewController.swift */; };
 		91C2AFC8200B21D800430DEA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 91C2AFC6200B21D800430DEA /* Main.storyboard */; };
@@ -34,6 +35,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		91A2ED2C2014611800BBC119 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		91C2AFBF200B21D800430DEA /* Stellar_iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Stellar_iOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		91C2AFC2200B21D800430DEA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		91C2AFC4200B21D800430DEA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -74,6 +76,59 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		91A2ED262014608D00BBC119 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				91A2ED2E2014614F00BBC119 /* Response */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		91A2ED27201460AB00BBC119 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				91C2AFC6200B21D800430DEA /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		91A2ED28201460B800BBC119 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				91A2ED2C2014611800BBC119 /* LoginViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		91A2ED29201460C100BBC119 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		91A2ED2A201460C500BBC119 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		91A2ED2B201460DC00BBC119 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				91C2AFC4200B21D800430DEA /* ViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		91A2ED2E2014614F00BBC119 /* Response */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Response;
+			sourceTree = "<group>";
+		};
 		91C2AFB6200B21D800430DEA = {
 			isa = PBXGroup;
 			children = (
@@ -97,9 +152,13 @@
 		91C2AFC1200B21D800430DEA /* Stellar_iOS */ = {
 			isa = PBXGroup;
 			children = (
+				91A2ED2A201460C500BBC119 /* Helper */,
+				91A2ED29201460C100BBC119 /* Manager */,
+				91A2ED262014608D00BBC119 /* Model */,
+				91A2ED28201460B800BBC119 /* ViewModel */,
+				91A2ED27201460AB00BBC119 /* View */,
+				91A2ED2B201460DC00BBC119 /* ViewController */,
 				91C2AFC2200B21D800430DEA /* AppDelegate.swift */,
-				91C2AFC4200B21D800430DEA /* ViewController.swift */,
-				91C2AFC6200B21D800430DEA /* Main.storyboard */,
 				91C2AFC9200B21D800430DEA /* Assets.xcassets */,
 				91C2AFCB200B21D800430DEA /* LaunchScreen.storyboard */,
 				91C2AFCE200B21D800430DEA /* Info.plist */,
@@ -261,6 +320,7 @@
 			files = (
 				91C2AFC5200B21D800430DEA /* ViewController.swift in Sources */,
 				91C2AFC3200B21D800430DEA /* AppDelegate.swift in Sources */,
+				91A2ED2D2014611800BBC119 /* LoginViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
