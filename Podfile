@@ -9,14 +9,26 @@ target 'Stellar_iOS' do
   # login sdk
   # map sdk
   # kingfisher
+  pod 'Kingfisher', '~> 4.0'
+
   # rx
+  pod 'RxSwift',    '~> 4.0'
+  pod 'RxCocoa',    '~> 4.0'
+
   # moya, alamofire
+  pod 'Moya/RxSwift', '~> 10.0'
+
   # model mapper
+
   # swiftyjson
+  pod 'SwiftyJSON'
 
   target 'Stellar_iOSTests' do
     inherit! :search_paths
     # Pods for testing
+    # rx testing
+    pod 'RxBlocking', '~> 4.0'
+    pod 'RxTest',     '~> 4.0'
   end
 
   target 'Stellar_iOSUITests' do
