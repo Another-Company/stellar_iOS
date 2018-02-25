@@ -23,6 +23,9 @@ target 'Stellar_iOS' do
   # swiftyjson
   pod 'SwiftyJSON'
 
+  # facebook
+  pod 'FBSDKLoginKit'
+
   target 'Stellar_iOSTests' do
     inherit! :search_paths
     # Pods for testing

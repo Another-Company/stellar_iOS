@@ -1,5 +1,15 @@
 PODS:
   - Alamofire (4.6.0)
+  - Bolts (1.8.4):
+    - Bolts/AppLinks (= 1.8.4)
+    - Bolts/Tasks (= 1.8.4)
+  - Bolts/AppLinks (1.8.4):
+    - Bolts/Tasks
+  - Bolts/Tasks (1.8.4)
+  - FBSDKCoreKit (4.29.0):
+    - Bolts (~> 1.7)
+  - FBSDKLoginKit (4.29.0):
+    - FBSDKCoreKit
   - Kingfisher (4.5.0)
   - Moya/Core (10.0.1):
     - Alamofire (~> 4.1)
@@ -18,6 +28,7 @@ PODS:
   - SwiftyJSON (4.0.0)
 
 DEPENDENCIES:
+  - FBSDKLoginKit
   - Kingfisher (~> 4.0)
   - Moya/RxSwift (~> 10.0)
   - RxBlocking (~> 4.0)
@@ -28,6 +39,9 @@ DEPENDENCIES:
 
 SPEC CHECKSUMS:
   Alamofire: f41a599bd63041760b26d393ec1069d9d7b917f4
+  Bolts: 8a7995239dbe724f9cba2248b766d48b7ebdd322
+  FBSDKCoreKit: 6f139173dc63a1deaff4430a55f2fe5bb222d2af
+  FBSDKLoginKit: 56a057ca6822535ea0faa25f57a7c41edb697fd4
   Kingfisher: 26ae0473102b77b575da51960c932431e3745407
   Moya: 9e621707ff754eeb51ff3ec51a3d54e517c0733a
   Result: d2d07204ce72856f1fd9130bbe42c35a7b0fea10
@@ -37,6 +51,6 @@ SPEC CHECKSUMS:
   RxTest: 0041e792cede35e53e4749f378d21482af0e9d12
   SwiftyJSON: 070dabdcb1beb81b247c65ffa3a79dbbfb3b48aa
 
-PODFILE CHECKSUM: 53000fae5aa7b63702d3589711f58c4409a972f4
+PODFILE CHECKSUM: 87c2a8f9ebf0f0fd9e7c747663bd1be98a52d40d
 
 COCOAPODS: 1.2.1.beta.1

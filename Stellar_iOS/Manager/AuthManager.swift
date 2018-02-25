@@ -9,5 +9,6 @@
 import UIKit
 
 class AuthManager: NSObject {
-
+    
+    
 }

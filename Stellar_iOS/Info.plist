@@ -26,9 +26,16 @@
 			<key>CFBundleURLSchemes</key>
 			<array>
 				<string>kakao7dd8e9d6280f03466ecd7ec779340d6f</string>
+                <string>fb575953736130553</string>
 			</array>
 		</dict>
 	</array>
+    
+    <key>FacebookAppID</key>
+    <string>575953736130553</string>
+    <key>FacebookDisplayName</key>
+    <string>Stellar</string>
+    
 	<key>CFBundleVersion</key>
 	<string>1</string>
 	<key>LSRequiresIPhoneOS</key>
@@ -63,6 +70,11 @@
 		<string>kakaotalk-4.5.0</string>
 		<string>kakaostory-2.9.0</string>
 		<string>storylink</string>
+        <string>fbapi</string>
+        <string>fb-messenger-share-api</string>
+        <string>fbauth2</string>
+        <string>fbshareextension</string>
 	</array>
+    
 </dict>
 </plist>
