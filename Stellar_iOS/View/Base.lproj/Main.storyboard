@@ -45,6 +45,11 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="fbloginBtn" destination="jcx-xb-z1E" id="co8-u4-hA1"/>
+                        <outlet property="googleLoginBtn" destination="5pY-qJ-QDv" id="caI-CG-7mw"/>
+                        <outlet property="kakaoLoginBtn" destination="Fkc-bJ-2p1" id="UWG-Sn-0dl"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

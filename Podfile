@@ -16,9 +16,10 @@ target 'Stellar_iOS' do
   pod 'RxCocoa',    '~> 4.0'
 
   # moya, alamofire
-  pod 'Moya/RxSwift', '~> 10.0'
+  pod 'Moya/RxSwift', '~> 11.0'
 
   # model mapper
+  pod 'Moya-ModelMapper/RxSwift', '7.0.0'
 
   # swiftyjson
   pod 'SwiftyJSON'

@@ -12,6 +12,10 @@
 		91A2ED2D2014611800BBC119 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91A2ED2C2014611800BBC119 /* LoginViewModel.swift */; };
 		91AC877420426D6A00873BF1 /* AuthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91AC877320426D6A00873BF1 /* AuthManager.swift */; };
 		91AC877620426D8E00873BF1 /* SomeResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91AC877520426D8E00873BF1 /* SomeResponse.swift */; };
+		91AC877820427C1700873BF1 /* AuthAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91AC877720427C1700873BF1 /* AuthAPI.swift */; };
+		91AC877A20427CA600873BF1 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91AC877920427CA600873BF1 /* Constants.swift */; };
+		91AC877C204281C600873BF1 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91AC877B204281C600873BF1 /* User.swift */; };
+		91AC877E2042851100873BF1 /* APITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91AC877D2042851100873BF1 /* APITests.swift */; };
 		91C2AFC3200B21D800430DEA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91C2AFC2200B21D800430DEA /* AppDelegate.swift */; };
 		91C2AFC5200B21D800430DEA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91C2AFC4200B21D800430DEA /* ViewController.swift */; };
 		91C2AFC8200B21D800430DEA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 91C2AFC6200B21D800430DEA /* Main.storyboard */; };
@@ -53,6 +57,10 @@
 		91A2ED2C2014611800BBC119 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		91AC877320426D6A00873BF1 /* AuthManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthManager.swift; sourceTree = "<group>"; };
 		91AC877520426D8E00873BF1 /* SomeResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SomeResponse.swift; sourceTree = "<group>"; };
+		91AC877720427C1700873BF1 /* AuthAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthAPI.swift; sourceTree = "<group>"; };
+		91AC877920427CA600873BF1 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		91AC877B204281C600873BF1 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		91AC877D2042851100873BF1 /* APITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APITests.swift; sourceTree = "<group>"; };
 		91C2AFBF200B21D800430DEA /* Stellar_iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Stellar_iOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		91C2AFC2200B21D800430DEA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		91C2AFC4200B21D800430DEA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -129,6 +137,7 @@
 			isa = PBXGroup;
 			children = (
 				91A2ED2E2014614F00BBC119 /* Response */,
+				91AC877B204281C600873BF1 /* User.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -153,6 +162,7 @@
 			isa = PBXGroup;
 			children = (
 				91AC877320426D6A00873BF1 /* AuthManager.swift */,
+				91AC877720427C1700873BF1 /* AuthAPI.swift */,
 			);
 			path = Manager;
 			sourceTree = "<group>";
@@ -161,6 +171,7 @@
 			isa = PBXGroup;
 			children = (
 				916C704B201D7BE9007301CD /* Stellar_iOS-Bridging-Header.h */,
+				91AC877920427CA600873BF1 /* Constants.swift */,
 			);
 			path = Helper;
 			sourceTree = "<group>";
@@ -226,6 +237,7 @@
 			children = (
 				91C2AFD7200B21D800430DEA /* Stellar_iOSTests.swift */,
 				91C2AFD9200B21D900430DEA /* Info.plist */,
+				91AC877D2042851100873BF1 /* APITests.swift */,
 			);
 			path = Stellar_iOSTests;
 			sourceTree = "<group>";
@@ -526,7 +538,10 @@
 				91AC877620426D8E00873BF1 /* SomeResponse.swift in Sources */,
 				91C2AFC3200B21D800430DEA /* AppDelegate.swift in Sources */,
 				91A2ED2D2014611800BBC119 /* LoginViewModel.swift in Sources */,
+				91AC877C204281C600873BF1 /* User.swift in Sources */,
 				91AC877420426D6A00873BF1 /* AuthManager.swift in Sources */,
+				91AC877820427C1700873BF1 /* AuthAPI.swift in Sources */,
+				91AC877A20427CA600873BF1 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -534,6 +549,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				91AC877E2042851100873BF1 /* APITests.swift in Sources */,
 				91C2AFD8200B21D800430DEA /* Stellar_iOSTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
