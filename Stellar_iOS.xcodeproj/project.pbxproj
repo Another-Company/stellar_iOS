@@ -10,6 +10,8 @@
 		916C7047201D7458007301CD /* KakaoOpenSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 916C7046201D7458007301CD /* KakaoOpenSDK.framework */; };
 		916C7049201D778C007301CD /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 916C7048201D778C007301CD /* LoginViewController.swift */; };
 		91A2ED2D2014611800BBC119 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91A2ED2C2014611800BBC119 /* LoginViewModel.swift */; };
+		91AC877420426D6A00873BF1 /* AuthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91AC877320426D6A00873BF1 /* AuthManager.swift */; };
+		91AC877620426D8E00873BF1 /* SomeResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91AC877520426D8E00873BF1 /* SomeResponse.swift */; };
 		91C2AFC3200B21D800430DEA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91C2AFC2200B21D800430DEA /* AppDelegate.swift */; };
 		91C2AFC5200B21D800430DEA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91C2AFC4200B21D800430DEA /* ViewController.swift */; };
 		91C2AFC8200B21D800430DEA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 91C2AFC6200B21D800430DEA /* Main.storyboard */; };
@@ -49,6 +51,8 @@
 		916C7048201D778C007301CD /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		916C704B201D7BE9007301CD /* Stellar_iOS-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Stellar_iOS-Bridging-Header.h"; sourceTree = "<group>"; };
 		91A2ED2C2014611800BBC119 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		91AC877320426D6A00873BF1 /* AuthManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthManager.swift; sourceTree = "<group>"; };
+		91AC877520426D8E00873BF1 /* SomeResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SomeResponse.swift; sourceTree = "<group>"; };
 		91C2AFBF200B21D800430DEA /* Stellar_iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Stellar_iOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		91C2AFC2200B21D800430DEA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		91C2AFC4200B21D800430DEA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -148,6 +152,7 @@
 		91A2ED29201460C100BBC119 /* Manager */ = {
 			isa = PBXGroup;
 			children = (
+				91AC877320426D6A00873BF1 /* AuthManager.swift */,
 			);
 			path = Manager;
 			sourceTree = "<group>";
@@ -172,6 +177,7 @@
 		91A2ED2E2014614F00BBC119 /* Response */ = {
 			isa = PBXGroup;
 			children = (
+				91AC877520426D8E00873BF1 /* SomeResponse.swift */,
 			);
 			path = Response;
 			sourceTree = "<group>";
@@ -517,8 +523,10 @@
 			files = (
 				916C7049201D778C007301CD /* LoginViewController.swift in Sources */,
 				91C2AFC5200B21D800430DEA /* ViewController.swift in Sources */,
+				91AC877620426D8E00873BF1 /* SomeResponse.swift in Sources */,
 				91C2AFC3200B21D800430DEA /* AppDelegate.swift in Sources */,
 				91A2ED2D2014611800BBC119 /* LoginViewModel.swift in Sources */,
+				91AC877420426D6A00873BF1 /* AuthManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
