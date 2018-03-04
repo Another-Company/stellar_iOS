@@ -2,8 +2,6 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>KAKAO_APP_KEY</key>
-	<string>7dd8e9d6280f03466ecd7ec779340d6f</string>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>$(DEVELOPMENT_LANGUAGE)</string>
 	<key>CFBundleExecutable</key>
@@ -26,18 +24,40 @@
 			<key>CFBundleURLSchemes</key>
 			<array>
 				<string>kakao7dd8e9d6280f03466ecd7ec779340d6f</string>
-                <string>fb575953736130553</string>
+				<string>fb575953736130553</string>
+			</array>
+		</dict>
+		<dict>
+			<key>CFBundleTypeRole</key>
+			<string>Editor</string>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>com.googleusercontent.apps.346008152521-m2m9lgovorbodi4832h6pashf5bt1s8n</string>
 			</array>
 		</dict>
 	</array>
-    
-    <key>FacebookAppID</key>
-    <string>575953736130553</string>
-    <key>FacebookDisplayName</key>
-    <string>Stellar</string>
-    
 	<key>CFBundleVersion</key>
 	<string>1</string>
+	<key>FacebookAppID</key>
+	<string>575953736130553</string>
+	<key>FacebookDisplayName</key>
+	<string>Stellar</string>
+	<key>KAKAO_APP_KEY</key>
+	<string>7dd8e9d6280f03466ecd7ec779340d6f</string>
+	<key>LSApplicationQueriesSchemes</key>
+	<array>
+		<string>kakao7dd8e9d6280f03466ecd7ec779340d6f</string>
+		<string>kakaokompassauth</string>
+		<string>storykompassauth</string>
+		<string>kakaolink</string>
+		<string>kakaotalk-4.5.0</string>
+		<string>kakaostory-2.9.0</string>
+		<string>storylink</string>
+		<string>fbapi</string>
+		<string>fb-messenger-share-api</string>
+		<string>fbauth2</string>
+		<string>fbshareextension</string>
+	</array>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
 	<key>UILaunchStoryboardName</key>
@@ -61,20 +81,5 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
-	<key>LSApplicationQueriesSchemes</key>
-	<array>
-		<string>kakao7dd8e9d6280f03466ecd7ec779340d6f</string>
-		<string>kakaokompassauth</string>
-		<string>storykompassauth</string>
-		<string>kakaolink</string>
-		<string>kakaotalk-4.5.0</string>
-		<string>kakaostory-2.9.0</string>
-		<string>storylink</string>
-        <string>fbapi</string>
-        <string>fb-messenger-share-api</string>
-        <string>fbauth2</string>
-        <string>fbshareextension</string>
-	</array>
-    
 </dict>
 </plist>

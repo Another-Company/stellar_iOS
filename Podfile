@@ -27,6 +27,10 @@ target 'Stellar_iOS' do
   # facebook
   pod 'FBSDKLoginKit'
 
+  # Google
+  pod 'Firebase/Auth'
+  pod 'GoogleSignIn'
+
   target 'Stellar_iOSTests' do
     inherit! :search_paths
     # Pods for testing
