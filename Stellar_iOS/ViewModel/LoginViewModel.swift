@@ -7,7 +7,13 @@
 //
 
 import Foundation
+import RxSwift
 
 class LoginViewModel : NSObject {
+    fileprivate let manager = AuthManager()
+    
+    func login(params : [String : Any]) -> Observable<User>{
+        return manager.login(params: Observable.just(params))
+    }
     
 }
