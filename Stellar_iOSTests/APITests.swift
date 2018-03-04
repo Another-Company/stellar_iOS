@@ -8,6 +8,7 @@
 
 import XCTest
 @testable import Stellar_iOS
+import RxSwift
 class APITests: XCTestCase {
     
     override func setUp() {
@@ -32,8 +33,22 @@ class APITests: XCTestCase {
         }
     }
     
-    func testKakaoLogin(){
-        
+    func testFacebookLogin(){
+        let vm = LoginViewModel()
+        let promise = expectation(description: "facebook login")
+        let params : [String : Any] = [
+            "access_token": "EAAIL063ZAXZCkBAAi8gXwRTAv0d5TC6Q5C3ObtgSH5K6BwwXWwrIhFstb5oZAcUfKVamZAk5vekNGniiLdCqZBVyYMZBEvhot1Gl3OhD4zQKFyRe2xnFcWTvboY5uIJ0QCfeA0fbtxlChwZB78INZCYJkb3ZB0FOZAbuu19uJvMAmFysx7NlOUQZB5Qj5ZAtsc5bO8HjNtN5ahrfmeDCe5Q0EB3duq5VKA186g4zZAmZA0KtR4ujB8lP6ZCYtL8",
+            "email":"ios_gsthtni_testuser@tfbnw.net",
+            "email_verified":true,
+            "provider":"FB",
+        ]
+        vm.login(params: params).subscribe(onNext: { (user) in
+            print(user.id)
+            promise.fulfill()
+        }, onError: { (error) in
+            print(error)
+        }).disposed(by: DisposeBag())
+        waitForExpectations(timeout: 5, handler: nil)
     }
     
     

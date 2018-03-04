@@ -55,6 +55,32 @@ class LoginViewController: UIViewController {
                 
             })
         }.disposed(by: disposeBag)
+        
+        kakaoLoginBtn.rx.tap.debounce(0.1, scheduler: MainScheduler.instance).subscribe { (event) in
+            let session : KOSession = KOSession.shared()
+            
+            if session.isOpen() {
+                session.close()
+            }
+            
+            session.open(completionHandler: { (error) in
+                if !session.isOpen() {
+                    if let e = error {
+                        let nserror = e as NSError
+                        switch nserror.code {
+                        case Int(KOErrorCancelled.rawValue):
+                            break
+                        default:
+                            let alert = UIAlertController(title: "에러", message: error?.localizedDescription, preferredStyle: .alert)
+                            alert.addAction(UIAlertAction(title: "확인", style: .cancel, handler: nil))
+                            self.present(alert, animated: true, completion: nil)
+                        }
+                    }
+                } else {
+                    print("kakao login success")
+                }
+            }, authTypes: [NSNumber(value: KOAuthType.talk.rawValue)])
+        }.disposed(by: disposeBag)
     }
     
     
