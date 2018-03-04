@@ -51,8 +51,6 @@ class LoginViewController: UIViewController {
                 let accessToken = FBSDKAccessToken.current()
                 guard let accessTokenString = accessToken?.tokenString else {return}
                 print(accessTokenString)
-                
-                
             })
         }.disposed(by: disposeBag)
         
