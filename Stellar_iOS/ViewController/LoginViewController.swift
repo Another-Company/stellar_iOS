@@ -148,12 +148,15 @@ class LoginViewController: UIViewController, GIDSignInUIDelegate, GIDSignInDeleg
             // ...
         Auth.auth().signIn(with: credential) { (user, error) in
             if let error = error {
-                // ...
+                print(error)
                 return
             }
-            // User is signed in
-            print("sdfasfasd",user)
-            // ...
+            if let user = user {
+                let uid = user?.uid
+                let email = user?.email
+            }
+            
+            
         }
     }
 
