@@ -10,6 +10,8 @@ PODS:
     - Bolts (~> 1.7)
   - FBSDKLoginKit (4.29.0):
     - FBSDKCoreKit
+  - Firebase (4.9.0):
+    - Firebase/Core (= 4.9.0)
   - Firebase/Auth (4.9.0):
     - Firebase/Core
     - FirebaseAuth (= 4.4.3)
@@ -85,6 +87,7 @@ PODS:
 
 DEPENDENCIES:
   - FBSDKLoginKit
+  - Firebase
   - Firebase/Auth
   - GoogleSignIn
   - Kingfisher (~> 4.0)
@@ -122,6 +125,6 @@ SPEC CHECKSUMS:
   RxTest: 0041e792cede35e53e4749f378d21482af0e9d12
   SwiftyJSON: 070dabdcb1beb81b247c65ffa3a79dbbfb3b48aa
 
-PODFILE CHECKSUM: 047227618dda25a3ddfd4863953be0848da0e8bf
+PODFILE CHECKSUM: 5036be740fb26eb2a555a0db7e2e08843d49dde6
 
 COCOAPODS: 1.2.1.beta.1

@@ -33,4 +33,8 @@ class Stellar_iOSTests: XCTestCase {
         }
     }
     
+    func testBundleIdentifier(){
+        XCTAssertEqual(Bundle.main.bundleIdentifier, "com.another.Stellar-iOS")
+    }
+    
 }
