@@ -24,10 +24,14 @@ target 'Stellar_iOS' do
   # swiftyjson
   pod 'SwiftyJSON'
 
+  # firebase
+  # pod 'Firebase/Core'
+
   # facebook
   pod 'FBSDKLoginKit'
 
   # Google
+
   pod 'Firebase/Auth'
   pod 'GoogleSignIn'
 
@@ -35,6 +39,7 @@ target 'Stellar_iOS' do
     inherit! :search_paths
     # Pods for testing
     # rx testing
+    pod 'Firebase'
     pod 'RxBlocking', '~> 4.0'
     pod 'RxTest',     '~> 4.0'
   end

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		912E9A16204BB45F00BEEDB9 /* TokenAuth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 912E9A15204BB45F00BEEDB9 /* TokenAuth.swift */; };
 		916C7047201D7458007301CD /* KakaoOpenSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 916C7046201D7458007301CD /* KakaoOpenSDK.framework */; };
 		916C7049201D778C007301CD /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 916C7048201D778C007301CD /* LoginViewController.swift */; };
 		91A2ED2D2014611800BBC119 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91A2ED2C2014611800BBC119 /* LoginViewModel.swift */; };
@@ -52,6 +53,7 @@
 		5B57DACF9D1A788539E2C35D /* Pods-Stellar_iOSUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Stellar_iOSUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Stellar_iOSUITests/Pods-Stellar_iOSUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		5D210BE01C95F0819FB6F1F5 /* Pods-Stellar_iOSUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Stellar_iOSUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Stellar_iOSUITests/Pods-Stellar_iOSUITests.release.xcconfig"; sourceTree = "<group>"; };
 		8273D970DB4C73E6308E14B3 /* Pods-Stellar_iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Stellar_iOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-Stellar_iOS/Pods-Stellar_iOS.release.xcconfig"; sourceTree = "<group>"; };
+		912E9A15204BB45F00BEEDB9 /* TokenAuth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokenAuth.swift; sourceTree = "<group>"; };
 		916C7046201D7458007301CD /* KakaoOpenSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = KakaoOpenSDK.framework; sourceTree = "<group>"; };
 		916C7048201D778C007301CD /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		916C704B201D7BE9007301CD /* Stellar_iOS-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Stellar_iOS-Bridging-Header.h"; sourceTree = "<group>"; };
@@ -174,6 +176,7 @@
 			children = (
 				916C704B201D7BE9007301CD /* Stellar_iOS-Bridging-Header.h */,
 				91AC877920427CA600873BF1 /* Constants.swift */,
+				912E9A15204BB45F00BEEDB9 /* TokenAuth.swift */,
 			);
 			path = Helper;
 			sourceTree = "<group>";
@@ -594,6 +597,7 @@
 				91AC877620426D8E00873BF1 /* SomeResponse.swift in Sources */,
 				91C2AFC3200B21D800430DEA /* AppDelegate.swift in Sources */,
 				91A2ED2D2014611800BBC119 /* LoginViewModel.swift in Sources */,
+				912E9A16204BB45F00BEEDB9 /* TokenAuth.swift in Sources */,
 				91AC877C204281C600873BF1 /* User.swift in Sources */,
 				91AC877420426D6A00873BF1 /* AuthManager.swift in Sources */,
 				91AC877820427C1700873BF1 /* AuthAPI.swift in Sources */,
@@ -767,7 +771,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = FNEH2787UY;
+				DEVELOPMENT_TEAM = 9MBM4TGHFP;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -809,7 +813,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = FNEH2787UY;
+				DEVELOPMENT_TEAM = 9MBM4TGHFP;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -849,6 +853,17 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9MBM4TGHFP;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_ROOT}/Headers/Public\"",
+					"\"${PODS_ROOT}/Headers/Public/Firebase\"",
+					"\"${PODS_ROOT}/Headers/Public/FirebaseAnalytics\"",
+					"\"${PODS_ROOT}/Headers/Public/FirebaseAuth\"",
+					"\"${PODS_ROOT}/Headers/Public/FirebaseCore\"",
+					"\"${PODS_ROOT}/Headers/Public/FirebaseInstanceID\"",
+					"\"${PODS_ROOT}/Headers/Public/GoogleSignIn\"",
+					"\"${PODS_ROOT}/Firebase/Core/Sources”",
+				);
 				INFOPLIST_FILE = Stellar_iOSTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.another.Stellar-iOSTests";
@@ -866,6 +881,17 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9MBM4TGHFP;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_ROOT}/Headers/Public\"",
+					"\"${PODS_ROOT}/Headers/Public/Firebase\"",
+					"\"${PODS_ROOT}/Headers/Public/FirebaseAnalytics\"",
+					"\"${PODS_ROOT}/Headers/Public/FirebaseAuth\"",
+					"\"${PODS_ROOT}/Headers/Public/FirebaseCore\"",
+					"\"${PODS_ROOT}/Headers/Public/FirebaseInstanceID\"",
+					"\"${PODS_ROOT}/Headers/Public/GoogleSignIn\"",
+					"\"${PODS_ROOT}/Firebase/Core/Sources”",
+				);
 				INFOPLIST_FILE = Stellar_iOSTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.another.Stellar-iOSTests";

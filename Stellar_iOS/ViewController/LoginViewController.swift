@@ -73,6 +73,17 @@ class LoginViewController: UIViewController, GIDSignInUIDelegate, GIDSignInDeleg
                 let accessToken = FBSDKAccessToken.current()
                 guard let accessTokenString = accessToken?.tokenString else {return}
                 print(accessTokenString)
+                
+                // firebase integration
+                let credential = FacebookAuthProvider.credential(withAccessToken: FBSDKAccessToken.current().tokenString)
+                Auth.auth().signIn(with: credential) { (user, error) in
+                    if let error = error {
+                        print(error)
+                        return
+                    }
+                    // User is signed in
+                    // ...
+                }
             })
             
         }.disposed(by: disposeBag)

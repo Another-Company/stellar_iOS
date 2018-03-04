@@ -7,8 +7,9 @@
 //
 
 import XCTest
-@testable import Stellar_iOS
 import RxSwift
+@testable import Stellar_iOS
+
 class APITests: XCTestCase {
     
     override func setUp() {
