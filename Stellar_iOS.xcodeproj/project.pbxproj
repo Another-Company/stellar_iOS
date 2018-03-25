@@ -28,6 +28,8 @@
 		E115825B9EF3195809877B6E /* Pods_Stellar_iOSUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9765A754C48242386EA981B /* Pods_Stellar_iOSUITests.framework */; };
 		E5614ED9A14DCDB016A3701D /* Pods_Stellar_iOSTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A8A0A3C8AEBCDD6E9D2412B /* Pods_Stellar_iOSTests.framework */; };
 		FF3BF4D920428D6300F4FA38 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FF3BF4D820428D6300F4FA38 /* GoogleService-Info.plist */; };
+		FF5878DC20675546007230E7 /* Email.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF5878DB20675546007230E7 /* Email.storyboard */; };
+		FF5878DE206761DF007230E7 /* EmailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF5878DD206761DF007230E7 /* EmailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -82,6 +84,8 @@
 		9549F31B150DD44B60928BE7 /* Pods-Stellar_iOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Stellar_iOSTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Stellar_iOSTests/Pods-Stellar_iOSTests.release.xcconfig"; sourceTree = "<group>"; };
 		B9765A754C48242386EA981B /* Pods_Stellar_iOSUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Stellar_iOSUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF3BF4D820428D6300F4FA38 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		FF5878DB20675546007230E7 /* Email.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Email.storyboard; sourceTree = "<group>"; };
+		FF5878DD206761DF007230E7 /* EmailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -150,6 +154,8 @@
 			isa = PBXGroup;
 			children = (
 				91C2AFC6200B21D800430DEA /* Main.storyboard */,
+				FF5878DB20675546007230E7 /* Email.storyboard */,
+				FF5878DD206761DF007230E7 /* EmailViewController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -374,6 +380,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FF5878DC20675546007230E7 /* Email.storyboard in Resources */,
 				91C2AFCD200B21D800430DEA /* LaunchScreen.storyboard in Resources */,
 				FF3BF4D920428D6300F4FA38 /* GoogleService-Info.plist in Resources */,
 				91C2AFCA200B21D800430DEA /* Assets.xcassets in Resources */,
@@ -453,13 +460,17 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Stellar_iOSTests/Pods-Stellar_iOSTests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac-Defines-NSData+zlib/GoogleToolboxForMac.framework",
 				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 				"${BUILT_PRODUCTS_DIR}/RxBlocking/RxBlocking.framework",
 				"${BUILT_PRODUCTS_DIR}/RxTest/RxTest.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxBlocking.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxTest.framework",
 			);
@@ -481,7 +492,7 @@
 				"${BUILT_PRODUCTS_DIR}/FBSDKLoginKit/FBSDKLoginKit.framework",
 				"${BUILT_PRODUCTS_DIR}/GTMOAuth2/GTMOAuth2.framework",
 				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
-				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac-f0850809/GoogleToolboxForMac.framework",
 				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
 				"${BUILT_PRODUCTS_DIR}/ModelMapper/Mapper.framework",
 				"${BUILT_PRODUCTS_DIR}/Moya/Moya.framework",
@@ -601,6 +612,7 @@
 				91AC877C204281C600873BF1 /* User.swift in Sources */,
 				91AC877420426D6A00873BF1 /* AuthManager.swift in Sources */,
 				91AC877820427C1700873BF1 /* AuthAPI.swift in Sources */,
+				FF5878DE206761DF007230E7 /* EmailViewController.swift in Sources */,
 				91AC877A20427CA600873BF1 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -771,7 +783,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 9MBM4TGHFP;
+				DEVELOPMENT_TEAM = FNEH2787UY;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -813,7 +825,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 9MBM4TGHFP;
+				DEVELOPMENT_TEAM = FNEH2787UY;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
