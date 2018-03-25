@@ -1,11 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina4_7" orientation="portrait">
+    <device id="retina5_9" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -15,33 +17,56 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="LoginViewController" customModule="Stellar_iOS" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jcx-xb-z1E">
-                                <rect key="frame" x="16" y="529" width="343" height="30"/>
-                                <state key="normal" title="Facebook Login"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jcx-xb-z1E">
+                                <rect key="frame" x="67.666666666666686" y="512.66666666666663" width="240" height="42"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="jcx-xb-z1E" secondAttribute="height" multiplier="40:7" id="TSb-vm-3vS"/>
+                                    <constraint firstAttribute="width" constant="240" id="eFr-ko-s6n"/>
+                                </constraints>
+                                <state key="normal" image="img_facebook_login"/>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5pY-qJ-QDv">
-                                <rect key="frame" x="16" y="575" width="343" height="30"/>
-                                <state key="normal" title="Google Login"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5pY-qJ-QDv">
+                                <rect key="frame" x="67.666666666666686" y="570.66666666666663" width="240" height="42"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="5pY-qJ-QDv" secondAttribute="height" multiplier="40:7" id="iJ7-mR-bs8"/>
+                                    <constraint firstAttribute="width" constant="240" id="yZI-wX-MEM"/>
+                                </constraints>
+                                <state key="normal" image="img_google_login"/>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fkc-bJ-2p1">
-                                <rect key="frame" x="16" y="621" width="343" height="30"/>
-                                <state key="normal" title="Kakaotalk Login"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fkc-bJ-2p1">
+                                <rect key="frame" x="67.666666666666686" y="628.66666666666663" width="240" height="42"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="YT9-6I-IfA"/>
+                                    <constraint firstAttribute="width" secondItem="Fkc-bJ-2p1" secondAttribute="height" multiplier="40:7" id="zxw-7W-EK4"/>
+                                </constraints>
+                                <state key="normal" image="img_kakao_login"/>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="vRj-Qa-8qU">
+                                <rect key="frame" x="37.666666666666657" y="63" width="300" height="280"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Continue with" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CHb-Lg-xoO">
+                                <rect key="frame" x="135" y="475.66666666666669" width="105.66666666666669" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Fkc-bJ-2p1" secondAttribute="trailing" constant="16" id="2yM-Fd-ygC"/>
-                            <constraint firstItem="Fkc-bJ-2p1" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="4iP-wz-oOk"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="jcx-xb-z1E" secondAttribute="trailing" constant="16" id="Oxs-tO-E5L"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="5pY-qJ-QDv" secondAttribute="trailing" constant="16" id="Rvx-zb-MVk"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Fkc-bJ-2p1" secondAttribute="bottom" constant="16" id="VXE-Fx-wQN"/>
-                            <constraint firstItem="jcx-xb-z1E" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="iRm-aY-5R9"/>
-                            <constraint firstItem="5pY-qJ-QDv" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="jpZ-EZ-DOl"/>
+                            <constraint firstItem="Fkc-bJ-2p1" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" multiplier="1.6" id="5Lj-OD-tzH"/>
+                            <constraint firstItem="CHb-Lg-xoO" firstAttribute="centerX" secondItem="jcx-xb-z1E" secondAttribute="centerX" id="5S3-ot-xT5"/>
+                            <constraint firstItem="Fkc-bJ-2p1" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="7FB-vC-xHR"/>
+                            <constraint firstItem="vRj-Qa-8qU" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.8" id="DVB-KD-pat"/>
+                            <constraint firstItem="vRj-Qa-8qU" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" multiplier="0.5" id="MnG-G3-vSG"/>
+                            <constraint firstItem="jcx-xb-z1E" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Sdc-nD-THu"/>
+                            <constraint firstItem="5pY-qJ-QDv" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="XcH-PK-I5z"/>
+                            <constraint firstItem="jcx-xb-z1E" firstAttribute="top" secondItem="CHb-Lg-xoO" secondAttribute="bottom" constant="16" id="cDm-1h-6RE"/>
                             <constraint firstItem="Fkc-bJ-2p1" firstAttribute="top" secondItem="5pY-qJ-QDv" secondAttribute="bottom" constant="16" id="nn5-pT-cAF"/>
                             <constraint firstItem="5pY-qJ-QDv" firstAttribute="top" secondItem="jcx-xb-z1E" secondAttribute="bottom" constant="16" id="r4u-pS-8VK"/>
+                            <constraint firstItem="vRj-Qa-8qU" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="rSR-rv-flg"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -55,4 +80,10 @@
             </objects>
         </scene>
     </scenes>
+    <resources>
+        <image name="img_facebook_login" width="960" height="168"/>
+        <image name="img_google_login" width="960" height="168"/>
+        <image name="img_kakao_login" width="960" height="168"/>
+        <image name="logo" width="800" height="280"/>
+    </resources>
 </document>
