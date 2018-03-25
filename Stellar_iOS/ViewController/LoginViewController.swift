@@ -44,14 +44,12 @@ class LoginViewController: UIViewController, GIDSignInUIDelegate, GIDSignInDeleg
     }
     
 
-    func sign(_ signIn: GIDSignIn!,
-              present viewController: UIViewController!) {
+    func sign(_ signIn: GIDSignIn!, present viewController: UIViewController!) {
         self.present(viewController, animated: true, completion: nil)
         print("signinpresent",signIn)
     }
     
-    func sign(_ signIn: GIDSignIn!,
-              dismiss viewController: UIViewController!) {
+    func sign(_ signIn: GIDSignIn!, dismiss viewController: UIViewController!) {
         self.dismiss(animated: true, completion: nil)
         print("dismiss",signIn)
     }
@@ -98,8 +96,6 @@ class LoginViewController: UIViewController, GIDSignInUIDelegate, GIDSignInDeleg
             GIDSignIn.sharedInstance().uiDelegate = self
             GIDSignIn.sharedInstance().signIn()
             
-            
-            
         }.disposed(by: disposeBag)
 //      구글로그인(커스텀 버튼 클래스사용시?)
 //        let tap = UIGestureRecognizer()
@@ -108,7 +104,7 @@ class LoginViewController: UIViewController, GIDSignInUIDelegate, GIDSignInDeleg
 //        }.disposed(by: disposeBag)
 //        googleLoginBtn.addGestureRecognizer(tap)
 
-        
+        // 카카오로그인
         kakaoLoginBtn.rx.tap.debounce(0.1, scheduler: MainScheduler.instance).subscribe { (event) in
             let session : KOSession = KOSession.shared()
             
@@ -136,38 +132,23 @@ class LoginViewController: UIViewController, GIDSignInUIDelegate, GIDSignInDeleg
         }.disposed(by: disposeBag)
     }
     
-    func sign(_ signIn: GIDSignIn!, didSignInFor user: GIDGoogleUser!,
-              withError error: Error!) {
+    func sign(_ signIn: GIDSignIn!, didSignInFor user: GIDGoogleUser!, withError error: Error!) {
         if let error = error {
             print("\(error.localizedDescription)")
         }
-//        else {
-////             Perform any operations on signed in user here.
-//
-//            print("user",user)
-//            let userId = user.userID
-//            let idToken = user.authentication.idToken
-//            let fullName = user.profile.name
-//            let givenName = user.profile.givenName
-//            let familyName = user.profile.familyName
-//            let email = user.profile.email
-//            print(givenName)
-//        }
-            guard let authentication = user.authentication else { return }
-            let credential = GoogleAuthProvider.credential(withIDToken: authentication.idToken,
-                                                           accessToken: authentication.accessToken)
-            // ...
+
+        guard let authentication = user.authentication else { return }
+        let credential = GoogleAuthProvider.credential(withIDToken: authentication.idToken, accessToken: authentication.accessToken)
         Auth.auth().signIn(with: credential) { (user, error) in
             if let error = error {
-                // ...
+                print(error)
                 return
             }
-            // User is signed in
-            print("sdfasfasd",user)
-            // ...
+            if let user = user {
+                let uid = user.uid
+                let email = user.email
+                let photoURL = user.photoURL
+            }
         }
     }
-
-    
-    
 }
